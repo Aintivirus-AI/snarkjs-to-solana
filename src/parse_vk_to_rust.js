@@ -107,7 +107,7 @@ async function parseVerificationKeyToRust(inputPath, outputDir = ".") {
         s += "\t],\n\n";
         fs.writeSync(resFile, s);
 
-        s = "\tvk_gamma_g2: [\n";
+        s = "\tvk_gamme_g2: [\n";
         for (var j = 0; j < mydata.vk_gamma_2.length - 1; j++) {
           for (var z = 0; z < 2; z++) {
             s += "\t\t" + Array.from(mydata.vk_gamma_2[j][z]) + ",\n";
