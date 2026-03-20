@@ -9,7 +9,7 @@
   },
   "exports": {
     ".": {
-      "browser": "./dist/index.browser.js",
+      "node": "./dist/index.node.js",
       "import": "./dist/index.js",
       "require": "./dist/index.js",
       "default": "./dist/index.js"

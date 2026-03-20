@@ -1,5 +1,5 @@
 /**
- * Convert a proof for Solana compatibility (Web version)
+ * Convert a proof for Solana compatibility
  * @param proof - Input proof as Uint8Array
  * @returns Converted proof as Uint8Array
  */
