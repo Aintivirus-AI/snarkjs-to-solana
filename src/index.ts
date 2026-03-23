@@ -6,6 +6,7 @@ let convert_proof: (proof: Uint8Array) => Uint8Array;
 const initWebModule = async () => {
     try {
         const wasmModule = await import("../proof_utils/pkg/web/proof_utils.js");
+        await wasmModule.default();
         convert_proof = wasmModule.convert_proof;
     } catch (error) {
         throw new Error("Failed to load web WASM module: " + error);
